@@ -1,0 +1,8 @@
+Assertion error occurred
+assert 'AOS-Rating Analyzer' == 'Ratings Analyzer'
+  - AOS-Rating Analyzer
+  ? ----
+  + Ratings Analyzer
+  ?       +
+I am inside finally block
+Test completed

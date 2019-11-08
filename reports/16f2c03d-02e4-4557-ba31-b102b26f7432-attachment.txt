@@ -1,0 +1,7 @@
+Assertion error occurred
+assert 'AOS-Rating Analyzer' == 'Ratings Analyzer1'
+  - AOS-Rating Analyzer
+  ? ----
+  + Ratings Analyzer1
+  ?       +         +
+Test completed
