@@ -35,7 +35,7 @@ class TestLogin():
                           attachment_type=allure.attachment_type.PNG)
             driver.get_screenshot_as_file("C:/Users/manjunathk/PycharmProjects/AutomatioFramework/screenshots/" + screenshotName + ".png")
             x = driver.title
-            assert x == "AOS-Rating Analyzer1"
+            assert x == "AOS-Rating Analyzer"
         except AssertionError as error:
             print("Assertion error occurred")
             print(error)
