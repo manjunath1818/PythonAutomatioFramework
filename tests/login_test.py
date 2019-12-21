@@ -20,14 +20,16 @@ class TestLogin():
         login.enter_username(utils.USERNAME)
         login.enter_password(utils.PASSWORD)
         login.click_login()
+
+
     def test_home(self):
         try:
             driver = self.driver
             driver.implicitly_wait(50)
 
             homepage = HomePage(driver)
-            homepage.click_ratingAnalyzerTab()
-            homepage.click_comscoreTab()
+            homepage.click_productTab()
+            homepage.click_allProductTab()
             currTime = moment.now().strftime("%d-%m-%Y_%H-%M-%S")
             testName = utils.thisFunctionName()
             screenshotName = testName+"_"+currTime
@@ -35,7 +37,7 @@ class TestLogin():
                           attachment_type=allure.attachment_type.PNG)
             driver.get_screenshot_as_file("C:/Users/manjunathk/PycharmProjects/AutomatioFramework/screenshots/" + screenshotName + ".png")
             x = driver.title
-            assert x == "AOS-Rating Analyzer"
+            assert x == "AOS-Products"
         except AssertionError as error:
             print("Assertion error occurred")
             print(error)

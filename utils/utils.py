@@ -3,8 +3,8 @@ import inspect
 import sys
 
 URL = "https://tvs-dev.operativeone.com/"
-USERNAME = "rating@o1ranbcuni.com"
-PASSWORD = "Oper@t1ve"
+USERNAME = "supportops@devfox.com"
+PASSWORD = "d3vfox!123"
 
 def whoami():
     return inspect.stack([0][3])

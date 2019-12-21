@@ -1,7 +1,6 @@
 import unittest
 from Examples import Example
 
-
 class MyTestCase(unittest.TestCase):
 
     @classmethod

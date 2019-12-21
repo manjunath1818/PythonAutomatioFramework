@@ -3,12 +3,12 @@ class HomePage():
     def __init__(self, driver):
         self.driver = driver
 
-        self.rating_analyzer_tab_xpath = "//span[text()='Ratings Analyzer']"
-        self.comscore_tab_xpath = "//div[@aria-label='ComScore']//span[contains(text(),'ComScore')]"
+        self.product_tab_xpath = "//span[contains(text(),'Product')]"
+        self.All_Products_xpath = "//div[contains(text(),'All Products')]"
 
-    def click_ratingAnalyzerTab(self):
-        self.driver.find_element_by_xpath(self.rating_analyzer_tab_xpath).click()
+    def click_productTab(self):
+        self.driver.find_element_by_xpath(self.product_tab_xpath).click()
 
-    def click_comscoreTab(self):
+    def click_allProductTab(self):
         self.driver.implicitly_wait(20)
-        self.driver.find_element_by_xpath(self.comscore_tab_xpath).click()
+        self.driver.find_element_by_xpath(self.All_Products_xpath).click()
